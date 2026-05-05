@@ -3,6 +3,15 @@ import { ExternalLink, GitBranch } from "lucide-react";
 
 const projects = [
   {
+    title: "Food Ordering",
+    description:
+      "A fully responsive and interactive food ordering web application. It features a modern user interface that allows users to seamlessly browse menus, customize their orders, and experience a smooth checkout process across all devices.",
+    tags: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80",
+    live: "https://github.com/aman-9496",
+    github: "https://github.com/aman-9496",
+  },
+  {
     title: "Mosque Website",
     description:
       "A full-stack mosque and madrasa management platform designed to digitize community services. The system includes prayer time management, donation tracking, event announcements, Iʿtikāf registration, futsal booking, and administrative dashboards. Built with a secure backend API and a responsive frontend, the platform is fully deployed with domain, HTTPS, and production-ready infrastructure, providing real-world functionality for Teqwa Masjid and its community.",

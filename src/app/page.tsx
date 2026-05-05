@@ -28,7 +28,7 @@ export default function Home() {
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">
                   Hi, I&apos;m{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 dark:from-blue-400 dark:to-teal-300">
-                    Amanu Developer
+                    Developer
                   </span>
                 </h1>
                 <p className="text-xl sm:text-2xl font-medium text-slate-700 dark:text-slate-300 mb-4">
