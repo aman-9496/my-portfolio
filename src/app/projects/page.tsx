@@ -11,8 +11,8 @@ const projects = [
       "A fully responsive and interactive food ordering web application. Features a modern UI allowing users to browse menus, customize orders, and experience a smooth checkout process across all devices.",
     tags: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80",
-    live: "https://github.com/aman-9496",           // TODO: replace with live deploy URL
-    github: "https://github.com/aman-9496",         // TODO: replace with exact repo URL
+    live: "https://github.com/aman-9496/food_ordering",
+    github: "https://github.com/aman-9496/food_ordering"
   },
   {
     title: "Mosque Website",
@@ -20,8 +20,8 @@ const projects = [
       "A full-stack mosque and madrasa management platform to digitize community services — prayer times, donations, events, Iʿtikāf registration, futsal booking, and admin dashboards. Fully deployed with domain and HTTPS.",
     tags: ["Django", "Python", "React", "PostgreSQL", "Docker", "AWS"],
     image: "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=800&q=80",
-    live: "https://your-mosque-site.com",            // TODO: replace with live deploy URL
-    github: "https://github.com/aman-9496/mosque-website",
+    live: "https://github.com/aman-9496/Mosque_website",
+    github: "https://github.com/aman-9496/Mosque_website",
   },
   {
     title: "E-commerce Website",

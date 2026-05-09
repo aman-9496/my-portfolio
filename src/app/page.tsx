@@ -52,15 +52,16 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex-1 flex justify-center lg:justify-end">
-                <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 group">
+                <div className="relative w-64 h-80 sm:w-80 sm:h-96 lg:w-96 lg:h-[28rem] group">
                   <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-blue-500 to-teal-400 opacity-20 dark:opacity-40 group-hover:opacity-40 dark:group-hover:opacity-60 transition-opacity duration-500 blur-2xl" />
                   <div className="relative w-full h-full rounded-3xl overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl bg-slate-100 dark:bg-slate-900">
                     <Image
-                      src="/aman.jpg"
+                      src="/amanlove.jpg"
                       alt="Amanu's Profile Picture"
                       fill
                       sizes="(max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
-                      className="object-cover"
+                      className="object-cover object-top"
+                      quality={100}
                       priority
                     />
                   </div>
