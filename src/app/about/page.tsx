@@ -1,7 +1,6 @@
 "use client";
 
 import { Award, Briefcase, Calendar, Code2, Users, Layers, CheckCircle2, ArrowRight, X } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -9,7 +8,7 @@ export default function AboutPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 animate-fade-in-up">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
       {/* Page Header */}
       <div className="mb-16">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">
@@ -53,9 +52,12 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <Link href="/" className="inline-flex items-center gap-2 mt-8 text-blue-600 dark:text-blue-400 font-semibold hover:text-blue-700 dark:hover:text-blue-300 transition-colors group">
-            Learn More <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </Link>
+          <button
+            onClick={() => { const el = document.getElementById("contact"); if (el) el.scrollIntoView({ behavior: "smooth" }); }}
+            className="inline-flex items-center gap-2 mt-8 text-blue-600 dark:text-blue-400 font-semibold hover:text-blue-700 dark:hover:text-blue-300 transition-colors group"
+          >
+            Get In Touch <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </button>
         </div>
 
         {/* Box 2: My Journey */}
@@ -128,7 +130,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Certificates</h2>
           <div className="space-y-4">
 
-            <div className="bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 p-4 rounded-2xl flex items-center gap-4 transition-transform hover:-translate-y-1">
+            <div className="bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 p-4 rounded-2xl flex items-center gap-4 hover:shadow-md transition-shadow">
               <div className="p-3 bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 rounded-xl">
                 <Award className="w-6 h-6" />
               </div>
@@ -142,7 +144,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 p-4 rounded-2xl flex items-center gap-4 transition-transform hover:-translate-y-1">
+            <div className="bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 p-4 rounded-2xl flex items-center gap-4 hover:shadow-md transition-shadow">
               <div className="p-3 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-xl">
                 <Award className="w-6 h-6" />
               </div>

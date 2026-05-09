@@ -1,12 +1,9 @@
-"use client";
-
 import Image from "next/image";
 import { ArrowRight, Code2 } from "lucide-react";
 import AboutPage from "./about/page";
 import SkillsPage from "./skills/page";
 import ProjectsPage from "./projects/page";
 import ContactPage from "./contact/page";
-import FooterPage from "./footer/page";
 
 export default function Home() {
   return (
@@ -28,7 +25,7 @@ export default function Home() {
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">
                   Hi, I&apos;m{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 dark:from-blue-400 dark:to-teal-300">
-                    Developer
+                    Amanu
                   </span>
                 </h1>
                 <p className="text-xl sm:text-2xl font-medium text-slate-700 dark:text-slate-300 mb-4">
@@ -41,16 +38,14 @@ export default function Home() {
                 <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
                   <a
                     href="#projects"
-                    onClick={(e) => { e.preventDefault(); document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" }); }}
-                    className="group inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-semibold hover:bg-slate-800 dark:hover:bg-slate-100 transition-all shadow-lg hover:shadow-xl active:scale-95"
+                    className="group inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-semibold hover:bg-blue-600 dark:hover:bg-blue-500 dark:hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95"
                   >
                     View Projects
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </a>
                   <a
                     href="#contact"
-                    onClick={(e) => { e.preventDefault(); document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" }); }}
-                    className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white dark:bg-slate-900 text-slate-900 dark:text-white border-2 border-slate-200 dark:border-slate-800 font-semibold hover:border-blue-500 dark:hover:border-blue-400 transition-all hover:shadow-md active:scale-95"
+                    className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white dark:bg-slate-900 text-slate-900 dark:text-white border-2 border-slate-200 dark:border-slate-800 font-semibold hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 hover:shadow-md active:scale-95"
                   >
                     Contact Me
                   </a>
@@ -58,13 +53,13 @@ export default function Home() {
               </div>
               <div className="flex-1 flex justify-center lg:justify-end">
                 <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 group">
-                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-blue-500 to-teal-400 opacity-20 dark:opacity-40 group-hover:opacity-30 dark:group-hover:opacity-50 transition-opacity blur-2xl" />
-                  <div className="relative w-full h-full rounded-3xl overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl rotate-3 group-hover:rotate-0 transition-all duration-500 bg-slate-100 dark:bg-slate-900">
+                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-blue-500 to-teal-400 opacity-20 dark:opacity-40 group-hover:opacity-40 dark:group-hover:opacity-60 transition-opacity duration-500 blur-2xl" />
+                  <div className="relative w-full h-full rounded-3xl overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl bg-slate-100 dark:bg-slate-900">
                     <Image
                       src="/aman.jpg"
                       alt="Amanu's Profile Picture"
                       fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      sizes="(max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
                       className="object-cover"
                       priority
                     />
@@ -95,9 +90,6 @@ export default function Home() {
       <section id="contact" className="border-t border-slate-100 dark:border-slate-800">
         <ContactPage />
       </section>
-
-      {/* FOOTER */}
-      <FooterPage />
     </>
   );
 }

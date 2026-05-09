@@ -19,6 +19,7 @@ import "./globals.css";
 // Using relative paths to ensure imports resolve correctly.
 import { ThemeProvider } from "../components/ThemeProvider";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,7 +45,6 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
       <body className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 transition-colors duration-300 flex flex-col">
@@ -53,6 +53,7 @@ export default function RootLayout({
           <main className="flex-grow pt-16">
             {children}
           </main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

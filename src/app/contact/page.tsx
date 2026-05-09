@@ -13,7 +13,6 @@ import {
   User,
   MessageSquare,
   AtSign,
-  FileText,
 } from "lucide-react";
 
 // ─── EmailJS credentials ───────────────────────────────────────────────────

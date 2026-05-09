@@ -2,7 +2,7 @@
 
 import React from "react";
 
-export default function FooterPage() {
+export default function Footer() {
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
     const element = document.getElementById(id);
@@ -27,7 +27,7 @@ export default function FooterPage() {
           <div className="flex flex-col gap-4">
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white">Quick Links</h3>
             <ul className="space-y-3">
-              {['about', 'services', 'projects', 'contact'].map((item) => (
+              {['about', 'skills', 'projects', 'contact'].map((item) => (
                 <li key={item}>
                   <a
                     href={`#${item}`}
@@ -64,6 +64,9 @@ export default function FooterPage() {
           <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Get In Touch</h4>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl text-lg">
             Share your idea, timeline, and goals. I can help you turn it into a polished product.
+          </p>
+          <p className="text-sm text-slate-400 dark:text-slate-500 mt-4">
+            &copy; {new Date().getFullYear()} Amanu Muhammed. All rights reserved.
           </p>
         </div>
       </div>
