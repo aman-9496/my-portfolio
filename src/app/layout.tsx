@@ -34,6 +34,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Developer Portfolio",
   description: "Modern personal portfolio built with Next.js and Tailwind CSS.",
+  viewport: "width=device-width, initial-scale=1.0, maximum-scale=5.0",
 };
 
 export default function RootLayout({
