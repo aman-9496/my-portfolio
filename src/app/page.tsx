@@ -15,23 +15,23 @@ export default function Home() {
             <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-blue-400/20 dark:bg-blue-900/20 blur-[120px]" />
             <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-teal-400/20 dark:bg-teal-900/20 blur-[120px]" />
           </div>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-20 w-full">
-            <div className="flex flex-col-reverse lg:flex-row items-center gap-8 sm:gap-12 lg:gap-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 w-full">
+            <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
               <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-medium text-sm mb-6">
                   <Code2 className="w-4 h-4" />
                   <span>Available for new opportunities</span>
                 </div>
-                <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">
                   Hi, I&apos;m{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 dark:from-blue-400 dark:to-teal-300">
                     Amanu
                   </span>
                 </h1>
-                <p className="text-base sm:text-xl lg:text-2xl font-medium text-slate-700 dark:text-slate-300 mb-4">
+                <p className="text-xl sm:text-2xl font-medium text-slate-700 dark:text-slate-300 mb-4">
                   Building digital experiences that matter.
                 </p>
-                <p className="text-sm sm:text-base lg:text-lg text-slate-600 dark:text-slate-400 max-w-2xl mb-10 leading-relaxed">
+                <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mb-10 leading-relaxed">
                   I&apos;m a passionate full-stack developer specializing in modern web technologies.
                   I craft responsive, accessible, and highly performant applications that solve real-world problems.
                 </p>
@@ -51,8 +51,8 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <div className="flex-1 flex justify-center lg:justify-end px-2 sm:px-0">
-                <div className="relative w-56 h-72 sm:w-72 sm:h-96 lg:w-96 lg:h-[28rem] group flex-shrink-0">
+              <div className="flex-1 flex justify-center lg:justify-end">
+                <div className="relative w-64 h-80 sm:w-80 sm:h-96 lg:w-96 lg:h-[28rem] group">
                   <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-blue-500 to-teal-400 opacity-20 dark:opacity-40 group-hover:opacity-40 dark:group-hover:opacity-60 transition-opacity duration-500 blur-2xl" />
                   <div className="relative w-full h-full rounded-3xl overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl bg-slate-100 dark:bg-slate-900">
                     <Image

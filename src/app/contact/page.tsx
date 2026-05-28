@@ -171,23 +171,23 @@ export default function ContactPage() {
     "w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200";
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-14">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
 
       {/* Page header */}
-      <div className="mb-8 sm:mb-12">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-white mb-2 sm:mb-3">
+      <div className="mb-12">
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-white mb-3">
           Contact Me
         </h1>
-        <p className="text-slate-500 dark:text-slate-400 text-sm sm:text-base leading-relaxed max-w-xl">
+        <p className="text-slate-500 dark:text-slate-400 text-base leading-relaxed max-w-xl">
           Have a role, project, or collaboration in mind? Fill in the form and I will get back to you as soon as possible.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-6 sm:gap-8 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-start">
 
         {/* ── LEFT: Contact info (2 of 5 columns) ── */}
-        <div className="md:col-span-2 flex flex-col gap-3 sm:gap-4">
-          <h2 className="text-base sm:text-lg font-semibold text-slate-900 dark:text-white mb-2 sm:mb-1">
+        <div className="md:col-span-2 flex flex-col gap-4">
+          <h2 className="text-lg font-semibold text-slate-900 dark:text-white mb-1">
             Get In Touch
           </h2>
 
@@ -211,16 +211,16 @@ export default function ContactPage() {
         </div>
 
         {/* ── RIGHT: Contact form (3 of 5 columns) ── */}
-        <div className="md:col-span-3 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm p-4 sm:p-6 lg:p-8">
-          <h2 className="text-base sm:text-lg font-semibold text-slate-900 dark:text-white mb-4 sm:mb-6">
+        <div className="md:col-span-3 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm p-8">
+          <h2 className="text-lg font-semibold text-slate-900 dark:text-white mb-6">
             Send a Message
           </h2>
 
           {/* Success banner */}
           {status === "success" && (
-            <div className="mb-4 sm:mb-6 flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-xl bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 text-green-700 dark:text-green-400">
-              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5" />
-              <p className="text-xs sm:text-sm font-medium">
+            <div className="mb-6 flex items-start gap-3 p-4 rounded-xl bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 text-green-700 dark:text-green-400">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />
+              <p className="text-sm font-medium">
                 Your message has been sent successfully! I will get back to you soon.
               </p>
             </div>
@@ -228,15 +228,15 @@ export default function ContactPage() {
 
           {/* Error banner */}
           {status === "error" && (
-            <div className="mb-4 sm:mb-6 flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-xl bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-400">
-              <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5" />
-              <p className="text-xs sm:text-sm font-medium">
+            <div className="mb-6 flex items-start gap-3 p-4 rounded-xl bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-400">
+              <AlertCircle className="w-5 h-5 flex-shrink-0 mt-0.5" />
+              <p className="text-sm font-medium">
                 Something went wrong. Please try again or email me directly.
               </p>
             </div>
           )}
 
-          <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-3 sm:gap-4 lg:gap-5">
+          <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-5">
 
             {/* Full Name */}
             <Field label="Full Name" icon={<User className="w-3.5 h-3.5" />} error={errors.name}>
@@ -283,7 +283,7 @@ export default function ContactPage() {
             <button
               type="submit"
               disabled={status === "loading"}
-              className="w-full flex items-center justify-center gap-1.5 sm:gap-2 px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-semibold text-xs sm:text-sm transition-colors duration-200 shadow-sm mt-1 sm:mt-2"
+              className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-semibold text-sm transition-colors duration-200 shadow-sm mt-1"
             >
               {status === "loading" ? (
                 <>
